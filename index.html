@@ -1,13 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Belajar Tailwind</title>
-    <link rel="stylesheet" href=""> <!--TODO buat style.css dan masukkan link dalam href-->
+    <link href="style/output.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Symbols+Outlined" rel="stylesheet" />
 </head>
 
-<body>
-    <h1>TEST</h1>
+<body class="px-16 font-poppins">
+    
+    <header class="flex justify-between items-center px-8 py-4 border-b border-gray-400 w-full">
+        <div class="w-[150px]">
+            <img src="./image/logo.png" alt="" class="w-full h-full">
+        </div>
+
+        <ul class="flex space-x-8 items-center font-medium text-gray-600">
+            <li>
+                <a href="#" class="relative text-black font-semibold after:absolute after:bottom-[-26px] after:left-0 after:h-[4px] after:w-full after:bg-green-600">Home</a>   <!--hanya ilusi saja-->
+            </li>
+            <li>
+                <a href="#">Shop</a>
+            </li>
+            <li>
+                <a href="#">Plant Care</a>
+            </li>
+            <li>
+                <a href="#">Blogs</a>
+            </li>
+        </ul>
+
+        <div class="flex items-center gap-4">
+            <span class="material-symbols-outlined">
+                search
+            </span>   
+            <span class="material-symbols-outlined">
+                shopping_cart
+            </span>
+            <button class="flex gap-2 items-center bg-green-600 hover:bg-green-600 py-3 px-4 text-white rounded-md">
+                <span class="material-symbols-outlined">login</span>
+                <a href="#">
+                    Login
+                </a>
+            </button>
+        </div>
+    </header>
+
+    
 </body>
+
 </html>
