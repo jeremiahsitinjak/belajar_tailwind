@@ -6,11 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Belajar Tailwind</title>
     <link href="style/output.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Symbols+Outlined" rel="stylesheet"/>
 </head>
 
 <body class="px-16 font-poppins">
     
+    <!--HEADER-->
     <header class="flex justify-between items-center px-8 py-4 border-b border-gray-400 w-full">
         <div class="w-[150px]">
             <img src="./image/logo.png" alt="" class="w-full h-full">
@@ -18,16 +19,16 @@
 
         <ul class="flex space-x-8 items-center font-medium text-gray-600">
             <li>
-                <a href="#" class="relative text-black font-semibold after:absolute after:bottom-[-26px] after:left-0 after:h-[3px] after:w-full after:bg-green-600">Home</a>   <!--hanya ilusi saja-->
+                <a href="#" class="relative font-semibold after:absolute after:bottom-[-26px] after:left-0 after:h-[3px] after:w-full text-green-600 after:bg-green-600">Home</a>   <!--hanya ilusi belaka-->
             </li>
             <li>
-                <a href="#">Shop</a>
+                <a href="#" class="hover:text-green-600 hover:border-green-600 pb-6">Shop</a>
             </li>
             <li>
-                <a href="#">Plant Care</a>
+                <a href="#" class="hover:text-green-600 hover:border-green-600 pb-6">Plant Care</a>
             </li>
             <li>
-                <a href="#">Blogs</a>
+                <a href="#" class="hover:text-green-600 hover:border-green-600 pb-6">Blogs</a>
             </li>
         </ul>
 
@@ -47,6 +48,7 @@
         </div>
     </header>
 
+    <!--ADVERTISEMENT-->
     <section class="bg-gray-200 py-8 mt-8">
         <div class="container mx-auto flex items-center justify-between px-8">
             <div class="w-full md:w-2/3">
@@ -69,6 +71,156 @@
         </div>
     </section>
 
+    <!--SHOP-->
+    <section class="px-8 py-8">
+        <!--SHOP HEADER-->
+        <div class="relative flex text-sm font-medium text-gray-600 border-b border-gray-300 mb-8 pb-4 py-4">
+            <div class="flex">
+                <ul class="flex space-x-8">
+                    <li>
+                        <a href="#" class="text-green-600 border-b-2 -mb-px border-green-600 relative pb-4">All Plants</a>      <!--hanya ilusi belaka-->
+                    </li>
+                    <li>
+                        <a href="#" class="hover:text-green-600 hover:border-b-2 hover:border-green-600 pb-4">New Arrivals</a>
+                    </li>
+                    <li>
+                        <a href="#" class="hover:text-green-600 hover:border-b-2 hover:border-green-600 pb-4">Sale</a>
+                    </li>
+                  </ul>
+            </div>
+            <div class="flex items-center space-x-2 absolute right-0 top-1/2 -translate-y-1/2">
+                <label for="sort" class="text-sm text-gray-500 mr-2">Sort by:</label>
+                <select id="sort" class="text-sm border border-gray-300 rounded px-2 py-1">
+                    <option>Default sorting</option>
+                    <option>Price</option>
+                    <option>Stock</option>
+                </select>
+            </div>
+        </div>
+
+        <!--SHOP ITEMS-->
+        <div>
+            <div class="grid grid-cols-4 gap-8">
+                <a href="#" class="text-left bg-gray-100 px-4 py-4">
+                    <img src="image/shop1.png" alt="Barberton Daisy" class="mx-auto">
+                    <p class="mt-2 text-gray-700">Barberton Daisy</p>
+                    <p class="text-green-600 font-semibold">$119.00</p>
+                </a>
+                <a href="#" class="text-left bg-gray-100 px-4 py-4">
+                    <img src="image/shop2.png" alt="Angel Wing Begonia" class="mx-auto">
+                    <p class="mt-2 text-gray-700">Angel Wing Begonia</p>
+                    <p class="text-green-600 font-semibold">$169.00</p>
+                </a>
+                <a href="#" class="relative text-left bg-gray-100 px-4 py-4">
+                    <span class="absolute top-0 left-0 bg-green-600 text-white px-2 py-2">
+                        13% OFF
+                    </span>
+                    <img src="image/shop3.png" alt="African Violet" class="mx-auto">
+                    <p class="mt-2 text-gray-700">African Violet</p>
+                    <p class="text-green-600 font-semibold">$169.00</p>
+                </a>
+                <a href="#" class="text-left bg-gray-100 px-4 py-4">
+                    <img src="image/shop4.png" alt="Beach Spider Lily" class="mx-auto">
+                    <p class="mt-2 text-gray-700">Beach Spider Lily</p>
+                    <p class="text-green-600 font-semibold">$129.00</p>
+                </a>
+                <a href="#" class="text-left bg-gray-100 px-4 py-4">
+                    <img src="image/shop5.png" alt="Blushing Bromeliad" class="mx-auto">
+                    <p class="mt-2 text-gray-700">Blushing Bromeliad</p>
+                    <p class="text-green-600 font-semibold">$139.00</p>
+                </a>
+                <a href="#" class="text-left bg-gray-100 px-4 py-4">
+                    <img src="image/shop6.png" alt="Bird's Nest Fern" class="mx-auto">
+                    <p class="mt-2 text-gray-700">Bird's Nest Fern</p>
+                    <p class="text-green-600 font-semibold">$99.00</p>
+                </a>
+                <a href="#" class="text-left bg-gray-100 px-4 py-4">
+                    <img src="image/shop7.png" alt="Broadleaf Lady Palm" class="mx-auto">
+                    <p class="mt-2 text-gray-700">Broadleaf Lady Palm</p>
+                    <p class="text-green-600 font-semibold">$59.00</p>
+                </a>
+                <a href="#" class="text-left bg-gray-100 px-4 py-4">
+                    <img src="image/shop7.png" alt="Aluminium Plant" class="mx-auto">
+                    <p class="mt-2 text-gray-700">Aluminium Plant</p>
+                    <p class="text-green-600 font-semibold">$179.00</p>
+                </a>
+            </div>
+            
+
+            <div class="flex justify-center pt-4 space-x-3">
+                <button class="w-8 h-8 border border-green-600 text-green-600 font-semibold rounded">1</button>
+                <button class="w-8 h-8 border text-gray-600 hover:text-green-600 rounded">2</button>
+                <button class="w-8 h-8 border text-gray-600 hover:text-green-600 rounded">3</button>
+                <button class="w-8 h-8 border text-gray-600 hover:text-green-600 rounded">4</button>
+            </div>
+        </div>
+
+    </section>
+
+    <!--PROMO-->
+    <section>
+        <div class="mt-16 mb-12">
+            <div class="max-w-8xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8">
+
+                <div class="bg-gray-50 px-12 py-6 rounded-lg text-right flex items-center">
+                    <div class="w-full">
+                        <img class="self-center w-full" src="image/shop5.png" alt="#">
+                    </div>
+                    <div>
+                        <h2 class="text-2xl font-extrabold text-gray-800 mb-4">SUMMER CACTUS<br/> & SUCCULENTS</h2>
+                        <p class="text-gray-600 mb-6">We are an online plant shop offering a wide range of cheap and trendy plants</p>
+                        <button class="px-6 py-2 bg-green-600 text-white rounded-md hover:bg-green-700">
+                            Find More
+                        </button>
+                    </div>
+                </div>  
+
+                <div class="bg-gray-50 px-12 py-6 rounded-lg text-right flex items-center">
+                    <div class="w-full">
+                        <img class="self-center w-full" src="image/shop3.png" alt="#">
+                    </div>
+                    <div>
+                        <h2 class="text-2xl font-extrabold text-gray-800 mb-4">STYLING TRENDS<br/> & MUCH MORE</h2>
+                        <p class="text-gray-600 mb-6">We are an online plant shop offering a wide range of cheap and trendy plants</p>
+                        <button class="px-6 py-2 bg-green-600 text-white rounded-md hover:bg-green-700">
+                            Find More
+                        </button>
+                    </div>
+                </div>  
+
+            </div>
+        </div>
+    </section>
+
+    <!--FOOTER-->
+    <footer>
+        <div class="relative bg-green-100 h-[100px] mx-6 mt-12 border-b border-t border-green-300">
+            <div class="flex items-center">
+                <div class="w-[200px] flex absolute left-0 top-1/2 -translate-y-1/2 pl-6">
+                    <img src="image/logo.png" alt="logo" class="">
+                </div>
+
+                <div class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 flex gap-16">
+                    <div class="flex items-center gap-2">
+                        <span class="material-symbols-outlined self-center text-green-600">location_on</span>
+                        <p class="text-sm text-black">70 West Buckingham Ave.<br>Farmingdale, NY 11735</p>
+                    </div>
+                    <div class="flex items-center gap-2">
+                        <span class="material-symbols-outlined self-center text-green-600">mail</span>
+                        <p class="text-sm text-black">contact@greenshop.com</p>
+                    </div>
+                    <div class="flex items-center gap-2">
+                        <span class="material-symbols-outlined self-center text-green-600">call</span>
+                        <p class="text-sm text-black">+88 01911 717 490</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="mt-8 mb-8 text-center">
+            <p class="text-gray-500">© 2025 GreenShop. All Rights Reserved.</p>
+        </div>
+    </footer>
+    
 </body>
 
 </html>
